@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: news-service
+  cloud:
+    config:
+      fail-fast: true
+      retry:
+        max-attempts: 5
+  config:
+    import: configserver:http://localhost:8888

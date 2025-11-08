@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    config:
+      fail-fast: true
+      retry:
+        max-attempts: 5
+  config:
+    import: configserver:http://localhost:8888
